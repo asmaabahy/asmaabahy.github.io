@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans.ttf");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #000000;
+  font-family: "Open Sans";
+}
+
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-yellow: #fbaf00;
+  --color-plum: #eb9fef;
+  --color-lavender: #c993ef;
+  --color-neon-blue: #4361ee;
+  --color-marian-blue: #2b3e98;
+  --color-black: #000;
+
+  --font-monospace: Monospace;
+  --animate-spin-slow: spin 15s linear infinite;
+  --animate-typing: typing 3s steps(22) forwards, blink 1s step-end infinite;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
