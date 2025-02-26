@@ -1,4 +1,9 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import {
+  ButtonHTMLAttributes,
+  InputHTMLAttributes,
+  ReactNode,
+  TextareaHTMLAttributes,
+} from "react";
 
 // constants
 
@@ -34,5 +39,20 @@ export interface TagProps {
 
 export interface SectionTitleProps {
   label: string;
+  className: string;
+}
+
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+  id: string;
+  name: string;
+  className: string;
+}
+
+export interface TextAreaProps
+  extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+  label: string;
+  id: string;
+  name: string;
   className: string;
 }

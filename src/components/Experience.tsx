@@ -6,13 +6,13 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="h-fit bg-white p-5 flex flex-col justify-center items-center"
+      className="min-h-[70vh] flex flex-col items-center bg-marian-blue"
     >
       <SectionTitle
         label="Experience"
-        className="text-black "
+        className="text-white self-start bg-neon-blue px-3 py-2"
       />
-      <div className="flex flex-col flex-wrap gap-3 md:max-w-[80%]">
+      <div className="grow flex flex-col justify-center items-center gap-3 p-5 w-full md:max-w-[70%]">
         {EXPERIENCES.map((experience) => (
           <ExperienceCard key={experience.id} experience={experience} />
         ))}

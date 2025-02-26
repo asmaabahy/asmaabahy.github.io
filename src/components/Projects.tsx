@@ -4,11 +4,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="h-[70vh] bg-lavender p-5 flex flex-col justify-center items-center"
+      className="h-[70vh] bg-marian-blue flex flex-col items-center"
     >
-      <SectionTitle label="Projects" className="text-black bg-yellow" />
+      <SectionTitle
+        label="Projects"
+        className="text-white self-start bg-neon-blue px-3 py-2"
+      />
     </section>
   );
-
-
 }

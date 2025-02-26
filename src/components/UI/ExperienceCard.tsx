@@ -3,7 +3,7 @@ import { ExperienceCardProps } from "../../constants/interfaces";
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
-    <article className="bg-lavender border-2 px-10 py-5 text-black drop-shadow-[-0.3rem_0.3rem_0rem_black]">
+    <article className="bg-plum w-full border-2 px-10 py-5 text-black drop-shadow-[-0.3rem_0.3rem_0rem_black]">
       <h1 className="text-xl font-semibold tracking-wide">
         {experience.position}
       </h1>

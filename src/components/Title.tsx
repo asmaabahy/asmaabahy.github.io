@@ -9,7 +9,7 @@ import {
 
 export default function Title() {
   return (
-    <section className="h-[50vh] relative bg-black ">
+    <section className="h-[50vh] bg-black ">
       <div className="h-full flex flex-col justify-center items-center text-white font-bold text-nowrap">
         <h1 className="mb-5 text-4xl">Asmaa Bahy</h1>
         <div className="typewriter text-2xl flex mb-5 sm:text-2xl lg:text-3xl xl:text-4xl xl:mb-10 2xl:text-4xl 3xl:text-5xl">
