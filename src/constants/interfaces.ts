@@ -39,20 +39,35 @@ export interface TagProps {
 
 export interface SectionTitleProps {
   label: string;
-  className: string;
+  className?: string;
 }
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  label: string;
+  placeholder: string;
   id: string;
   name: string;
-  className: string;
+  className?: string;
 }
 
 export interface TextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
-  label: string;
+  placeholder: string;
   id: string;
   name: string;
-  className: string;
+  className?: string;
+}
+
+export interface ModalProps {
+  children: ReactNode;
+  open: boolean;
+  className?: string;
+  onClose: () => void;
+}
+
+// State
+
+export interface ContactFormStatus {
+  submitted: boolean;
+  submitting: boolean;
+  error: unknown;
 }

@@ -63,7 +63,7 @@ export default function Navbar() {
       {showMenu && (
         <ul
           ref={menu}
-          className="absolute h-fit top-full left-0 z-100 md:hidden w-full flex flex-col justify-evenly font-semibold bg-black"
+          className="absolute h-fit top-full left-0 z-50 md:hidden w-full flex flex-col justify-evenly font-semibold bg-black"
         >
           {navbarSections.map((section) => (
             <li key={section.id} className="text-center py-3">

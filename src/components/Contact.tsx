@@ -18,7 +18,7 @@ export default function Contact() {
           hi. &#128516;
         </h1>
 
-        <div className="w-full h-fit justify-self-center lg:w-[60vw] border-2 rounded-4xl p-5 bg-lavender drop-shadow-[-0.3rem_0.3rem_0rem_black]">
+        <div className="p-5 w-full md:w-[50vw]">
           <ContactForm />
         </div>
       </div>
