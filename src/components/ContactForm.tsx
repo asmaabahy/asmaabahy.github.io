@@ -25,7 +25,7 @@ export default function ContactForm() {
     });
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbxxVE2LzyVLWfN4zUrOhUdivqz-pnQSFTYS0CxVwDRkqhaIrOTER2QgiyotysP8a_dkWA/exec",
+      "https://script.google.com/macros/s/AKfycbxyloaAfNgVRaGD0cGpmL08WPD65m-QzGsoATFZxrJ7FxKdCuxg1qK5Tt3HfDmoFzhXWw/exec",
       {
         method: "POST",
         body: form,
