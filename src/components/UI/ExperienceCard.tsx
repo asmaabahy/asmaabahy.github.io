@@ -7,10 +7,10 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 
   return (
     <article className="w-full border-l-2 border-gray-800 px-4 mb-3">
-      <h1 className="text-xl font-semibold tracking-wide mb-2">
+      <h1 className="text-lg xs:text-xl sm:text-2xl font-semibold tracking-wide mb-2">
         {experience.position}
       </h1>
-      <h2 className="text-lg tracking-wide mb-2 flex flex-row items-center gap-3">
+      <h2 className="tracking-wide mb-2 flex flex-row items-center gap-3">
         <a
           href={experience.companyWebsite}
           target="_blank"
@@ -20,7 +20,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           <span>{experience.company}</span>
           <FaArrowUpRightFromSquare className="h-3 w-3" />
         </a>
-        <span className="text-sm">( {experience.date} )</span>
+        <span className="text-xs">( {experience.date} )</span>
       </h2>
       <button
         onClick={() => {
@@ -35,7 +35,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.description.map((task) => (
             <li
               key={task}
-              className="flex flex-row items-baseline lg:items-center gap-1"
+              className="text-sm xs:text-base flex flex-row items-baseline gap-1"
             >
               <FaSquare className="h-3 w-3 mr-2 inline-block shrink-0" />
               <span className="">{task}</span>

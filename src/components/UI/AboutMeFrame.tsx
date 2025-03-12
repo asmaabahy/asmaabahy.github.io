@@ -5,7 +5,7 @@ export default function AboutMeFrame({ children, label }: { children: ReactNode,
   return (
     <div
       id={label.replace(/\s+/g, "").toLowerCase()}
-      className="flex flex-col items-start gap-7 w-full p-3"
+      className="flex flex-col items-start gap-7 w-full"
     >
       <SmallHeading>{label}</SmallHeading>
       {children}
