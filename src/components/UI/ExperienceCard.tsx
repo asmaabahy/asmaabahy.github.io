@@ -1,27 +1,48 @@
-import Tag from "./Tag";
+import { useState } from "react";
 import { ExperienceCardProps } from "../../constants/interfaces";
+import { FaArrowUpRightFromSquare, FaSquare } from "react-icons/fa6";
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {
+  const [unrollList, setUnrollList] = useState(false);
+
   return (
-    <article className="bg-plum w-full border-2 px-10 py-5 text-black drop-shadow-[-0.3rem_0.3rem_0rem_black]">
-      <h1 className="text-xl font-semibold tracking-wide">
+    <article className="w-full border-l-2 border-gray-800 px-4 mb-3">
+      <h1 className="text-xl font-semibold tracking-wide mb-2">
         {experience.position}
       </h1>
-      <h2 className="font-semibold text-lg tracking-wide mb-5">
-        <a href={experience.companyWebsite}>{experience.company}</a> |
-        {experience.date}
+      <h2 className="text-lg tracking-wide mb-2 flex flex-row items-center gap-3">
+        <a
+          href={experience.companyWebsite}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-row items-center gap-1 font-semibold hover:underline"
+        >
+          <span>{experience.company}</span>
+          <FaArrowUpRightFromSquare className="h-3 w-3" />
+        </a>
+        <span className="text-sm">( {experience.date} )</span>
       </h2>
-      <ul className="mb-5 font-semibold">{experience.description.map(task => <li key={task}>
-        {task}
-      </li> )}</ul>
-
-      <ul className="flex flex-row gap-1 flex-wrap">
-        {experience.technologies.map((skill) => (
-          <li key={skill}>
-            <Tag skill={skill} />
-          </li>
-        ))}
-      </ul>
+      <button
+        onClick={() => {
+          setUnrollList((prev) => !prev);
+        }}
+        className="text-sm font-semibold underline"
+      >
+        {unrollList ? "Hide details" : "Show details"}
+      </button>
+      {unrollList && (
+        <ul>
+          {experience.description.map((task) => (
+            <li
+              key={task}
+              className="flex flex-row items-baseline lg:items-center gap-1"
+            >
+              <FaSquare className="h-3 w-3 mr-2 inline-block shrink-0" />
+              <span className="">{task}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </article>
   );
 }

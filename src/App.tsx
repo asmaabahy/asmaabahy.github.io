@@ -1,19 +1,15 @@
-import AboutMe from "./components/AboutMe";
+import AllAboutMe from "./components/AllAboutMe";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Title from "./components/Title";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <Title />
-      <AboutMe />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Header />
+      <main>
+        <AllAboutMe />
+        <Contact />
+      </main>
     </>
   );
 }

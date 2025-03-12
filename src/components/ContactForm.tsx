@@ -11,7 +11,7 @@ export default function ContactForm() {
     isError: null,
   });
 
-  let SubmitButtonLabel = submissionStatus.isSending ? "Sending..." : "Submit";
+  let SubmitButtonLabel = submissionStatus.isSending ? "Sending..." : "Send";
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -87,14 +87,14 @@ export default function ContactForm() {
         <div className="flex flex-row gap-2 justify-end">
           <Button
             type="reset"
-            className="bg-gray text-white border-2"
+            className="bg-gray text-white"
             disabled={submissionStatus.isSending}
           >
             Reset
           </Button>
           <Button
             type="submit"
-            className="bg-yellow border-2"
+            className="bg-[#f72585] border-2 border-[#f72585] font-bold text-white tracking-wider min-w-[8rem]"
             disabled={submissionStatus.isSending}
           >
             {SubmitButtonLabel}
@@ -102,19 +102,16 @@ export default function ContactForm() {
         </div>
       </form>
       <Modal open={submissionStatus.isSent} onClose={handleClosePopup}>
-        <div className="border-4 bg-lavender text-black rounded-4xl flex flex-col items-center justify-around p-5 gap-5">
+        <div className="bg-plum text-black rounded-4xl flex flex-col items-center justify-around p-5 gap-5">
           <div className="flex flex-col items-center gap-3">
-            <p className="block text-2xl font-semibold">
-              &#9989; Message sent!
-            </p>
+            <p className="block text-2xl font-semibold">Message sent!</p>
             <p className="text-center text-pretty font-medium ">
-              Thanks for reaching out! I'll get back to you as soon as possible.
-              &#128522;
+              I'll get back to you as soon as possible.
             </p>
           </div>
           <Button
             type="button"
-            className="bg-yellow text-black border-2"
+            className="bg-[#f72585] text-white"
             onClick={handleClosePopup}
           >
             Okay

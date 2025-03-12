@@ -7,18 +7,12 @@ import {
 
 // constants
 
-export interface NavbarSection {
-  id: string;
-  label: string;
-}
-
 export interface Experience {
   id: number;
   position: string;
   company: string;
   companyWebsite: string;
   date: string;
-  technologies: string[];
   description: string[];
 }
 
@@ -31,15 +25,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export interface ExperienceCardProps {
   experience: Experience;
-}
-
-export interface TagProps {
-  skill: string;
-}
-
-export interface SectionTitleProps {
-  label: string;
-  className?: string;
 }
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -62,6 +47,10 @@ export interface ModalProps {
   open: boolean;
   className?: string;
   onClose: () => void;
+}
+
+export interface SmallHeadingProps {
+  children: ReactNode;
 }
 
 // State
