@@ -35,7 +35,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.description.map((task) => (
             <li
               key={task}
-              className="text-sm xs:text-base flex flex-row items-baseline gap-1"
+              className="flex flex-row items-baseline gap-1 p-2"
             >
               <FaSquare className="h-3 w-3 mr-2 inline-block shrink-0" />
               <span className="">{task}</span>

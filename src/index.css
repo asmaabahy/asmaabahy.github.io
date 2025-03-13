@@ -20,6 +20,16 @@ body {
   font-family: "Open Sans";
 }
 
+::selection {
+  background-color: #eb9fef;
+  color: #000;
+}
+
+::-moz-selection {
+  background-color: #eb9fef;
+  color: #000;
+}
+
 @theme {
   --color-*: initial;
   --color-white: #fff;

@@ -1,12 +1,13 @@
-
-
+import { FaJsSquare } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaVuejs } from "react-icons/fa6";
 import ButtonsGroup from "./ButtonsGroup";
+import SmallHeading from "./UI/SmallHeading";
 
+const iconsStyle = "mr-2 text-3xl xs:text-2xl sm:text-3xl 3xl:text-6xl";
 
 export default function Title() {
-
   return (
-    <header className="min-h-[50vh] bg-[#11151C] flex flex-col justify-evenly items-center ">
+    <header className="min-h-[30vh] bg-[#11151C] flex flex-col justify-around items-center p-10 ">
       <div className="flex flex-col justify-center items-center text-white font-bold text-nowrap">
         <h1 className="uppercase text-2xl xs:text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-8xl xs:mb-3">
           Asmaa Bahy
@@ -17,8 +18,8 @@ export default function Title() {
           </span>
         </div>
         
-        <ButtonsGroup />
       </div>
+      <ButtonsGroup />
     </header>
   );
 }

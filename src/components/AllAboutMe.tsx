@@ -1,18 +1,8 @@
-import {
-  FaArrowUpRightFromSquare,
-  FaCss3Alt,
-  FaHtml5,
-  FaReact,
-  FaVuejs,
-  FaBootstrap,
-} from "react-icons/fa6";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { EXPERIENCES } from "../constants/constants";
 import { Fragment } from "react/jsx-runtime";
 import ExperienceCard from "./UI/ExperienceCard";
 import AboutMeFrame from "./UI/AboutMeFrame";
-import { FaJsSquare } from "react-icons/fa";
-
-const iconsStyle = "mr-2 text-xl xs:text-2xl sm:text-3xl 3xl:text-6xl";
 
 export default function AllAboutMe() {
   return (
@@ -21,7 +11,7 @@ export default function AllAboutMe() {
       className="min-h-[50vh] flex flex-col items-center bg-[#212D40] border-t-8 border-b-8 border-dotted text-white"
     >
       <div className="h-full px-5 py-10 grow flex flex-col justify-evenly items-center gap-7 md:max-w-[70%]">
-        <AboutMeFrame label="About me">
+        <AboutMeFrame label="About">
           <p className="text-pretty border-l-2 px-4 break-words">
             <span className="block mb-3">
               Junior Frontend Engineer, with a year of experience under my belt,
@@ -54,7 +44,9 @@ export default function AllAboutMe() {
           <div className="flex flex-col gap-1 border-l-2 px-4">
             <h3 className="text-lg font-semibold text-pretty">
               Computer Engineering
-              <span className="font-light text-sm sm:text-base block">( 2020 - 2023 )</span>
+              <span className="font-light mx-2 text-sm sm:text-base">
+                ( 2020 - 2023 )
+              </span>
             </h3>
             <p className="text-pretty hover:underline">
               <a
@@ -67,17 +59,6 @@ export default function AllAboutMe() {
                 <FaArrowUpRightFromSquare className="h-3 w-3 inline-block mx-1" />
               </a>
             </p>
-          </div>
-        </AboutMeFrame>
-
-        <AboutMeFrame label="Skills">
-          <div className="flex flex-row justify-around md:justify-start border-l-2 px-4">
-            <FaHtml5 className={iconsStyle} />
-            <FaCss3Alt className={iconsStyle} />
-            <FaBootstrap className={iconsStyle} />
-            <FaJsSquare className={iconsStyle} />
-            <FaReact className={iconsStyle + " animate-spin-slow"} />
-            <FaVuejs className={iconsStyle} />
           </div>
         </AboutMeFrame>
       </div>
