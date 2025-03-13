@@ -1,9 +1,4 @@
-import { FaJsSquare } from "react-icons/fa";
-import { FaHtml5, FaCss3Alt, FaReact, FaVuejs } from "react-icons/fa6";
 import ButtonsGroup from "./ButtonsGroup";
-import SmallHeading from "./UI/SmallHeading";
-
-const iconsStyle = "mr-2 text-3xl xs:text-2xl sm:text-3xl 3xl:text-6xl";
 
 export default function Title() {
   return (
