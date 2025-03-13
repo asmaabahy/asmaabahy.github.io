@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-[100vh] flex flex-col bg-[#11151C]">
+    <section id="contact" className="min-h-[100vh] flex flex-col bg-black">
       <div className="p-5 self-start">
         <ButtonsGroup />
       </div>

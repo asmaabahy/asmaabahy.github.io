@@ -2,7 +2,7 @@ import ButtonsGroup from "./ButtonsGroup";
 
 export default function Title() {
   return (
-    <header className="min-h-[30vh] bg-[#11151C] flex flex-col justify-around items-center p-10 ">
+    <header className="min-h-[30vh] bg-black flex flex-col justify-around items-center p-10 ">
       <div className="flex flex-col justify-center items-center text-white font-bold text-nowrap">
         <h1 className="uppercase text-2xl xs:text-3xl sm:text-4xl md:text-5xl xl:text-6xl 3xl:text-8xl xs:mb-3">
           Asmaa Bahy

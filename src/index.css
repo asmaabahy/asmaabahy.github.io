@@ -35,11 +35,14 @@ body {
   --color-white: #fff;
   --color-yellow: #fbaf00;
   --color-plum: #eb9fef;
+  --color-rose: #F72585;
+  --color-grape: #7209B7;
   --color-lavender: #c993ef;
   --color-neon-blue: #4361ee;
   --color-marian-blue: #2b3e98;
-  --color-gray: #808080;
-  --color-black: #000;
+  --color-gray-light: #364156;
+  --color-gray-dark: #212D40;
+  --color-black: #11151C;
 
   --breakpoint-xs: 25rem;
   --breakpoint-3xl: 120rem;

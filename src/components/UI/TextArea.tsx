@@ -7,7 +7,7 @@ export default function Input({ placeholder, id, name, className = "", ...props 
         id={id}
         name={name}
         {...props}
-        className="block text-white font-semibold placeholder:font-light bg-[#364156] placeholder:text-white rounded-2xl px-4 py-2 focus:outline-0 w-full h-full resize-none"
+        className="block text-white font-semibold placeholder:font-light bg-gray-light placeholder:text-white rounded-2xl px-4 py-2 focus:outline-0 w-full h-full resize-none"
         placeholder={placeholder + "..."}
       />
     </div>

@@ -8,7 +8,7 @@ export default function AllAboutMe() {
   return (
     <section
       id="about"
-      className="min-h-[50vh] flex flex-col items-center bg-[#212D40] border-t-8 border-b-8 border-dotted text-white"
+      className="min-h-[50vh] flex flex-col items-center bg-gray-dark border-t-8 border-b-8 border-dotted text-white"
     >
       <div className="h-full px-5 py-10 grow flex flex-col justify-evenly items-center gap-7 md:max-w-[70%]">
         <AboutMeFrame label="About">

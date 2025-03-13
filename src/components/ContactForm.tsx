@@ -94,7 +94,7 @@ export default function ContactForm() {
           </Button>
           <Button
             type="submit"
-            className="bg-[#f72585] border-2 border-[#f72585] font-bold text-white tracking-wider min-w-[8rem]"
+            className="bg-rose border-2 border-rose font-bold text-white tracking-wider min-w-[8rem]"
             disabled={submissionStatus.isSending}
           >
             {SubmitButtonLabel}
@@ -111,7 +111,7 @@ export default function ContactForm() {
           </div>
           <Button
             type="button"
-            className="bg-[#f72585] text-white"
+            className="bg-rose text-white"
             onClick={handleClosePopup}
           >
             Okay
