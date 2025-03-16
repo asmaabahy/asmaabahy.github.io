@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { ExperienceCardProps } from "../../constants/interfaces";
 import { FaArrowUpRightFromSquare, FaSquare } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {
+  const { t } = useTranslation();
   const [unrollList, setUnrollList] = useState(false);
 
   return (
@@ -28,17 +30,14 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
         }}
         className="text-sm font-semibold underline"
       >
-        {unrollList ? "Hide details" : "Show details"}
+        {unrollList ? t("experience.hide") : t("experience.expand")}
       </button>
       {unrollList && (
         <ul>
           {experience.description.map((task) => (
-            <li
-              key={task}
-              className="flex flex-row items-baseline gap-1 p-2"
-            >
+            <li key={task} className="flex flex-row items-baseline gap-1 p-2">
               <FaSquare className="h-3 w-3 mr-2 inline-block shrink-0" />
-              <span className="">{task}</span>
+              <span className="">{t(task)}</span>
             </li>
           ))}
         </ul>

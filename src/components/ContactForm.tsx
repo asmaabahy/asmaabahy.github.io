@@ -3,15 +3,20 @@ import Button from "./UI/Button";
 import Input from "./UI/Input";
 import TextArea from "./UI/TextArea";
 import Modal from "./UI/Modal";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
+  
   const [submissionStatus, setSubmissionStatus] = useState({
     isSending: false,
     isSent: false,
     isError: null,
   });
 
-  let SubmitButtonLabel = submissionStatus.isSending ? "Sending..." : "Send";
+  let SubmitButtonLabel = submissionStatus.isSending
+    ? t("contact.form.sending")
+    : t("contact.form.send");
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -64,21 +69,21 @@ export default function ContactForm() {
         <div className="grid grid-rows-6 md:grid-rows-5 grid-cols-1 gap-3 mb-5 ">
           <Input
             id="name"
-            placeholder="Your name"
+            placeholder={t("contact.form.name")}
             type="text"
             name="Name"
             required
           />
           <Input
             id="email"
-            placeholder="Your e-mail address"
+            placeholder={t("contact.form.email")}
             type="email"
             name="Email"
             required
           />
           <TextArea
             id="message"
-            placeholder="Enter your message"
+            placeholder={t("contact.form.message")}
             name="Message"
             required
             className="row-span-3"
@@ -90,7 +95,7 @@ export default function ContactForm() {
             className="bg-gray text-white"
             disabled={submissionStatus.isSending}
           >
-            Reset
+            {t("contact.form.reset")}
           </Button>
           <Button
             type="submit"
@@ -104,9 +109,11 @@ export default function ContactForm() {
       <Modal open={submissionStatus.isSent} onClose={handleClosePopup}>
         <div className="bg-plum text-black rounded-4xl flex flex-col items-center justify-around p-5 gap-5">
           <div className="flex flex-col items-center gap-3">
-            <p className="block text-2xl font-semibold">Message sent!</p>
+            <p className="block text-2xl font-semibold">
+              {t("contact.modal.confirmation")}
+            </p>
             <p className="text-center text-pretty font-medium ">
-              I'll get back to you as soon as possible.
+              {t("contact.modal.message")}
             </p>
           </div>
           <Button
@@ -114,7 +121,7 @@ export default function ContactForm() {
             className="bg-rose text-white"
             onClick={handleClosePopup}
           >
-            Okay
+            {t("contact.modal.okay")}
           </Button>
         </div>
       </Modal>

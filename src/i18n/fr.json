@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "ingénieur frontend junior"
+  },
+  "linkButtons": {
+    "resume": "Télécharger mon CV",
+    "linkedin": "Me contacter sur LinkedIn",
+    "github": "Visitez mon GitHub"
+  },
+  "about": {
+    "heading": "Présentation",
+    "p1": "Ingénieure d'État en informatique, passionnée par le développement frontend. J'ai acquis une année d'expérience en travaillant principalement avec Nuxt.js, React.js, Tailwind CSS et Bootstrap.",
+    "p2": "J'accorde une grande importance au design responsive, à l'optimisation des performances et à l'accessibilité, afin de proposer des expériences fluides et inclusives (a11y).",
+    "p3": "Je suis actuellement à la recherche d'un poste de développeuse frontend où je pourrai monter en compétences."
+  },
+  "education": {
+    "heading": "Formation",
+    "title": "Génie Informatique",
+    "school": "Académie Internationale Mohammed VI de l'Aviation Civile, Nouaceur, MA"
+  },
+  "experience": {
+    "heading": "Expérience",
+    "expand" : "En savoir plus",
+    "hide" : "Réduire",
+    "experience_1": {
+      "position": "Junior Frontend Developer",
+      "tasks": {
+        "task_1": "J'ai travaillé avec une équipe de 3 développeurs frontend sur deux projets : une plateforme de comptabilité et une plateforme d'apprentissage en ligne.",
+        "task_2": "J'ai développé des fonctionnalités frontend clés, telles que des formulaires dynamiques et des tableaux de données, en veillant à leur bon fonctionnement et à l'interaction fluide avec l'utilisateur.",
+        "task_3": "J'ai réalisé des revues de code, contribuant à la qualité du code et aux bonnes pratiques.",
+        "task_4": "J'ai intégré des techniques de SEO, améliorant la visibilité et la portée des plateformes.",
+        "task_5": "J'ai mis en place un design responsive, garantissant la compatibilité sur tous les appareils."
+      }
+    },
+    "experience_2": {
+      "position": "Junior Frontend Developer (Intership)",
+      "tasks": {
+        "task_1": "J'ai acquis une expérience pratique avec le contrôle de version (Git) et les processus de développement agile.",
+        "task_2": "J'ai développé une solide compréhension des technologies frontend (JavaScript moderne, TypeScript, Vue.js et React.js).",
+        "task_3": "J'ai participé aux revues de code et aux discussions, apprenant les bonnes pratiques et les flux de travail en développement frontend.",
+        "task_4": "J'ai étudié les user stories et participé à la définition des fonctionnalités en fonction des besoins des utilisateurs."
+      }
+    }
+  },
+  "contact": {
+    "heading": "N'hésitez pas à me contacter pour une collaboration, une question ou simplement pour échanger.",
+    "form": {
+      "name": "Votre nom...",
+      "email": "Votre e-mail...",
+      "message": "Votre message",
+      "reset": "Effacer",
+      "send": "Envoyer",
+      "sending": "Envoi en cours..."
+    },
+    "modal": {
+      "confirmation": "Votre message a bien été envoyé !",
+      "message": "Je vous répondrai dans les plus brefs délais.",
+      "okay": "D'accord"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "junior frontend engineer"
+  },
+  "linkButtons": {
+    "resume": "Download my resume",
+    "linkedin": "Connect with me on LinkedIn",
+    "github": "Visit my GitHub"
+  },
+  "about": {
+    "heading": "About",
+    "p1": "Junior Frontend Engineer, with a year of experience under my belt, mostly working with Nuxt.js, React.js, Tailwind CSS, and Bootstrap.",
+    "p2": "I am really into responsive design, making websites faster (performance optimization), and implementing designs that work for everyone, including people with disabilities (a11y).",
+    "p3": "I am currently seeking a frontend developer role where I can contribute and leverage my skills."
+  },
+  "education": {
+    "heading": "Education",
+    "title": "Computer Engineering",
+    "school": "Mohammed VI International Academy of Civil Aviation, Nouaceur, MA"
+  },
+  "experience": {
+    "heading": "Experience",
+    "expand": "Show details",
+    "hide": "Show less",
+    "experience_1": {
+      "position": "Junior Frontend Developer",
+      "tasks": {
+        "task_1": "Worked with a team of 3 frontend developers on two projects: an accounting platform and an e-learning platform.",
+        "task_2": "Built key frontend features, such as dynamic forms and data tables, ensuring smooth functionality and user interaction.",
+        "task_3": "Conducted code reviews, contributing to code quality and best practices.",
+        "task_4": "Integrated SEO techniques, enhancing the visibility and reach of the platforms.",
+        "task_5": "Implemented responsive design, ensuring compatibility across devices."
+      }
+    },
+    "experience_2": {
+      "position": "Junior Frontend Developer (Intership)",
+      "tasks": {
+        "task_1": "Gained hands-on experience with version control (Git) and agile development processes.",
+        "task_2": "Developed a strong understanding of frontend technologies ( modern Javascript, Typescript, Vue.js and React.js).",
+        "task_3": "Participated in code reviews and discussions, learning best practices and frontend development workflows.",
+        "task_4": "Learned about the user stories and contributed to defining features based on user needs."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Feel free to reach out for collaborations, questions, or just to say hi.",
+    "form": {
+      "name": "Enter your name...",
+      "email": "Enter your e-mail...",
+      "message": "Enter your message",
+      "reset": "Reset",
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "modal": {
+      "confirmation": "Message sent!",
+      "message": "I'll get back to you as soon as possible.",
+      "okay": "Okay"
+    }
+  }
+}
