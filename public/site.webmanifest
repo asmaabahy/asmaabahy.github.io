@@ -1,6 +1,6 @@
 {
   "name": "Asmaa Bahy",
-  "short_name": "a.bahy",
+  "short_name": "Asmaa Bahy",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#dea0a0",
-  "background_color": "#dea0a0",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
