@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+
+body {
+  background-color: #11001c;
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --color-*: initial;
+  --color-velvet-100: #3a015c;
+  --color-velvet-300: #32004f;
+  --color-velvet-500: #220135;
+  --color-velvet-700: #190028;
+  --color-velvet-900: #11001c;
+
+  --color-pink-100: #ffdde1;
+  --color-pink-300: #ffb8de;
+  --color-pink-500: #ff74d4;
+  --color-pink-700: #ff36ab;
+
+  --color-blue-100: #8ECAE6;
+  --color-blue-300: #219EBC;
+  --color-blue-500: #023047;
+
+  --color-vibrant-blue: #3A86FF;
+  --color-vibrant-purple: #8338EC;
+  --color-vibrant-pink: #FF006E;
+  --color-vibrant-orange: #FB5607;
+  --color-vibrant-yellow: #FFBE0B;
+  
+  --color-yellow-100: #ffd700;
+  --color-yellow-300: #FFB703;
+  --color-yellow-500: #FB8500;
+
+
+  --color-white: #ffffff;
+  --color-gray: #5d5d81;
+  --color-black: #000000;
+  --color-purple: #642ca9;
+
+  --breakpoint-xs: 25rem;
+  --breakpoint-3xl: 120rem;
+
+  --animate-spin-slow: spin 15s linear infinite;
+  --animate-typing: typing 3s steps(22) forwards, blink 1s step-end infinite;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
