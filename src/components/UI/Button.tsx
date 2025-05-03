@@ -5,7 +5,7 @@ export default function Button({ children, onClick }: ButtonProps) {
   return (
     <motion.button
       whileHover={{ scale: 1.2 }}
-      className="px-6 py-3 text-xl tracking-widest font-semibold bg-gradient-to-r from-vibrant-pink to-vibrant-purple rounded-full cursor-pointer"
+      className="px-6 py-3 text-xl tracking-widest font-semibold bg-blue-600 text-neutral-50 rounded-full cursor-pointer"
       onClick={onClick}
     >
       {children}

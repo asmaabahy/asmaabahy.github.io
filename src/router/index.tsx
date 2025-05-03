@@ -1,18 +1,36 @@
 import { createBrowserRouter } from "react-router";
-import Home from "../pages/Home";
-import Contact from "../pages/Contact";
 import RootLayout from "../layouts/RootLayout";
-import Blog from "../pages/Blog";
+import HomeLayout from "../layouts/HomeLayout";
+import { lazy, Suspense } from "react";
 
+const Blog = lazy(() => import("../pages/Blog"));
+const Contact = lazy(() => import("../pages/Contact"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
     children: [
-      { index: true, element: <Home /> },
-      { path: "contact", element: <Contact /> },
-      { path: "blog", element: <Blog /> },
+      {
+        path: "/",
+        element: <HomeLayout />,
+      },
+      {
+        path: "contact",
+        element: (
+          <Suspense fallback={<p>Loading ...</p>}>
+            <Contact />
+          </Suspense>
+        ),
+      },
+      {
+        path: "blog",
+        element: (
+          <Suspense fallback={<p>Loading ...</p>}>
+            <Blog />
+          </Suspense>
+        ),
+      },
     ],
   },
 ]);

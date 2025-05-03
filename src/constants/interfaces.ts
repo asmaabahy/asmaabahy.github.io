@@ -7,9 +7,9 @@ export interface ButtonProps {
 export interface navbarItem {
   path: string;
   label: string;
+  underConstruction: boolean
 };
 
 export interface SideMenuProps {
   navbarItems: navbarItem[];
-  onHideMenu: () => void;
 }
