@@ -1,33 +1,39 @@
 import { Outlet, useLocation, useNavigate } from "react-router";
 import SwitchTab from "../components/UI/SwitchTab";
+import Experience from "../pages/Experience";
+import Skills from "../pages/Skills";
+import Projects from "../pages/Projects";
+import { useState } from "react";
+import ErrorMessage from "../components/UI/ErrorMessage";
 
 const links = [
-  { id: "experience", path: "/experience", label: "Experience" },
-  { id: "skills", path: "/skills", label: "Skills" },
-  { id: "projects", path: "/projects", label: "Projects" },
+  {
+    id: "experience",
+    label: "Experience",
+    component: <Experience />,
+  },
+  { id: "skills", label: "Skills", component: <Skills /> },
+  {
+    id: "projects",
+    label: "Projects",
+    component: <Projects />,
+  },
 ];
 
 function HomeLayout() {
-  const navigate = useNavigate()
-  const location = useLocation();
-  const currentTab = location.pathname.replace("/", "") || 'experience';
+  const [currentTab, setCurrentTab] = useState("experience");
   function handleNavigation(id: string) {
-    if (currentTab !== id) {
-      navigate(id);
-    }
-  }  
+    setCurrentTab(id);
+  }
 
-  console.log('hello');
-  
   return (
-    <section className="p-3 flex flex-col justify-center items-center text-center py-10">
-
-      <SwitchTab
+    <section className="p-3 flex flex-col justify-center items-center py-10">
+      {/* <SwitchTab
         tabs={links}
         onSwitch={handleNavigation}
         currentTab={currentTab}
-      />
-       <Outlet />
+      /> */}
+      <Outlet />
     </section>
   );
 }
