@@ -4,7 +4,6 @@ import Experience from "../pages/Experience";
 import Skills from "../pages/Skills";
 import Projects from "../pages/Projects";
 import { useState } from "react";
-import ErrorMessage from "../components/UI/ErrorMessage";
 
 const links = [
   {
