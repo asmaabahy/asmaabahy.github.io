@@ -1,4 +1,4 @@
-import { Experience } from "./interfaces";
+import { Experience, Skill } from "./interfaces";
 
 export const EXPERIENCE: Experience[] = [
   {
@@ -28,4 +28,31 @@ export const EXPERIENCE: Experience[] = [
       "Learned about the user stories and contributed to defining features based on user needs.",
     ],
   },
+];
+
+export const DEVSTACK : Skill[] = [
+  { id: "html", label: "HTML", path: "/dev_stack_images/html5.svg" },
+  { id: "css", label: "CSS", path: "/dev_stack_images/css3.svg" },
+  {
+    id: "javascript",
+    label: "JavaScript",
+    path: "/dev_stack_images/javascript.svg",
+  },
+  { id: "jquery", label: "JQuery", path: "/dev_stack_images/jquery.svg" },
+  {
+    id: "typescript",
+    label: "TypeScript",
+    path: "/dev_stack_images/typescript.svg",
+  },
+  { id: "tailwind", label: "Tailwind", path: "/dev_stack_images/tailwind.svg" },
+  {
+    id: "bootstrap",
+    label: "Bootstrap",
+    path: "/dev_stack_images/bootstrap.svg",
+  },
+  { id: "react", label: "ReactJS", path: "/dev_stack_images/react.svg" },
+  { id: "next", label: "NextJS", path: "/dev_stack_images/next.svg" },
+  { id: "vue", label: "VueJS", path: "/dev_stack_images/vue.svg" },
+  { id: "nuxt", label: "NuxtJS", path: "/dev_stack_images/nuxt.svg" },
+  { id: "motion", label: "Framer Motion", path: "/dev_stack_images/framer-motion.svg" },
 ];

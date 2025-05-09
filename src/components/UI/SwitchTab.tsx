@@ -19,7 +19,7 @@ function SwitchTab({ currentTab, tabs, onSwitch }: SwitchTabProps) {
               style={{ borderRadius: "9999px" }}
             />
           )}
-          <motion.span className="relative z-10 mix-blend-exclusion">
+          <motion.span className="relative text-lg z-10 mix-blend-exclusion">
             {item.label}
           </motion.span>
         </motion.li>

@@ -20,7 +20,7 @@ function ExperienceDetailsCard({ experience }: { experience: Experience }) {
     >
       <div className="flex justify-between items-start mb-2">
         <div>
-          <h1 className="text-base font-medium text-neutral-50">
+          <h1 className="text-lg font-medium text-neutral-50">
             {experience.position}
           </h1>
           <a
@@ -41,7 +41,7 @@ function ExperienceDetailsCard({ experience }: { experience: Experience }) {
         {experience.description.map((task, index) => (
           <li
             key={index}
-            className="flex items-start gap-2 text-sm text-neutral-50"
+            className="flex items-start gap-2 text-neutral-50"
           >
             <FaCircle className="text-[6px] mt-[6px] text-neutral-50 shrink-0" />
             <span>{task}</span>

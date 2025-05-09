@@ -1,5 +1,8 @@
 import SkillBox from "../components/UI/SkillBox";
 import { motion } from "motion/react";
+import { DEVSTACK } from "../constants/constants";
+
+const devStack = DEVSTACK;
 
 const container = {
   hidden: { opacity: 0 },
@@ -17,20 +20,11 @@ function Skills() {
       variants={container}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-2 lg:grid-cols-6 lg:justify-items-center w-[90%] md:w-[70%] gap-3"
+      className="grid grid-cols-3 lg:grid-cols-6 justify-items-center w-[90%] md:w-[70%] gap-3"
     >
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
-      <SkillBox />
+      {devStack.map((item) => (
+        <SkillBox key={item.id} skill={item} />
+      ))}
     </motion.div>
   );
 }

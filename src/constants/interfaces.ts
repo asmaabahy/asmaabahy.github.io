@@ -1,13 +1,14 @@
 export interface ButtonProps {
   children: React.ReactNode;
+  className?: string
   onClick: () => void;
 }
 
 export interface navbarItem {
   path: string;
   label: string;
-  underConstruction: boolean
-};
+  underConstruction: boolean;
+}
 
 export interface SideMenuProps {
   navbarItems: navbarItem[];
@@ -16,7 +17,7 @@ export interface SideMenuProps {
 export interface Tabs {
   id: string;
   label: string;
-  component?: React.JSX.Element
+  component?: React.JSX.Element;
 }
 
 export interface SwitchTabProps {
@@ -32,4 +33,10 @@ export interface Experience {
   companyWebsite: string;
   date: string;
   description: string[];
+}
+
+export interface Skill {
+  id: string;
+  label: string;
+  path: string;
 }
