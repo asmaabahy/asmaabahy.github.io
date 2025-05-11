@@ -13,7 +13,8 @@ export default function Title() {
         </p>
         <div className="">
           <Button
-            className="tracking-widest text-nowrap font-semibold bg-neutral-50 text-neutral-900"
+            whileHover={{ backgroundColor: "#fafafa", color: "#171717" }}
+            className="tracking-widest text-nowrap font-semibold bg-neutral-900 text-neutral-50 px-6 py-3 text-xl rounded-full border"
             onClick={handleClick}
           >
             Download CV

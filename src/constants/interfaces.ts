@@ -4,7 +4,11 @@ export interface ButtonProps {
   children: React.ReactNode;
   className?: string;
   whileHover?: TargetAndTransition | VariantLabels | {}
-  onClick: () => void;
+  onClick?: (e: any) => void;
+}
+
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  type: string; // e.g., 'text', 'email', 'password', etc.
 }
 
 export interface navbarItem {

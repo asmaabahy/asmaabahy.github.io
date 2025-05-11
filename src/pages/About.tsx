@@ -14,7 +14,7 @@ export default function About() {
         </span>
       </p>
       <div className="self-start px-5 md:px-36 xl:px-56">
-        <h1 className="text-4xl mb-4 text-amber-500">Education</h1>
+        <h1 className="text-4xl mb-4 border-b-2 w-fit border-dashed">Education</h1>
         <p className="text-3xl mb-1">Software Engineering</p>
         <p className="text-2xl hover:underline">
           <a href="https://aiac.ma/" target="_blank" rel="noopener noreferrer">

@@ -6,7 +6,7 @@ export default function Button({ children, onClick, className, whileHover }: But
     <motion.button
       whileHover={whileHover}
       transition={{ type: 'tween', ease: 'easeIn'}}
-      className={"px-6 py-3 text-xl rounded-full cursor-pointer " + className}
+      className={"cursor-pointer " + className}
       onClick={onClick}
     >
       {children}

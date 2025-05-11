@@ -1,10 +1,11 @@
-import { Link } from "react-router";
+import ContactForm from "../components/ContactForm";
+import SectionFrame from "../components/UI/SectionFrame";
 
 export default function Contact() {
   return (
-    <>
-      <div>Contact</div>
-      <Link to="hello">contact id</Link>
-    </>
+    <SectionFrame title="Let's connect !">
+      <ContactForm />
+    </SectionFrame>
   );
 }
+

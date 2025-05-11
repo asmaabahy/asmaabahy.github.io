@@ -1,6 +1,6 @@
 function SectionFrame({ children, title } : {children: React.ReactNode, title?: string}) {
   return (
-    <section className="min-h-[80vh] flex flex-col gap-3 justify-center items-center mb-20">
+    <section className="min-h-[75vh] flex flex-col gap-3 justify-center items-center mb-20">
       {title && (
         <h1
           className="text-3xl xs:text-4xl xl:text-6xl mb-10 font-extrabold tracking-tighter 
