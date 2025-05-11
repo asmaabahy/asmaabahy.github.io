@@ -1,6 +1,9 @@
+import { TargetAndTransition, VariantLabels } from "motion/react";
+
 export interface ButtonProps {
   children: React.ReactNode;
-  className?: string
+  className?: string;
+  whileHover?: TargetAndTransition | VariantLabels | {}
   onClick: () => void;
 }
 

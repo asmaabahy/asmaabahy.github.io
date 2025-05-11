@@ -12,13 +12,17 @@ const navbarItems: navbarItem[] = [
 export default function Navbar() {
   const location = useLocation();
   const navBackgroundColor =
-    "h-full relative px-3 xs:px-6 md:px-8 3xl:px-32 3xl:py-16 w-full flex items-center bg-neutral-900/70 backdrop-blur-md";
+    "h-full relative flex items-center";
 
   return (
     <>
       {/* md screen navbar */}
-      <nav className={navBackgroundColor + " hidden md:flex justify-end"}>
-        <ul className="flex flex-row gap-10 ">
+      <nav
+        className={
+          navBackgroundColor + " hidden md:flex justify-center items-center w-full py-2 "
+        }
+      >
+        <ul className="rounded-full flex flex-row gap-10 bg-neutral-900/70 backdrop-blur-md h-full w-[50%] justify-evenly items-center px-3 xs:px-6 md:px-8 3xl:px-32 3xl:py-16">
           {navbarItems.map((item) => (
             <>
               <motion.li
