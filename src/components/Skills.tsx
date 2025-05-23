@@ -20,7 +20,7 @@ function Skills() {
       variants={container}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-3 lg:grid-cols-6 justify-items-center w-[90%] md:w-[70%] gap-3"
+      className="grid grid-cols-3 lg:grid-cols-4 justify-items-center w-[90%] md:w-[50%] gap-3"
     >
       {devStack.map((item) => (
         <SkillBox key={item.id} skill={item} />

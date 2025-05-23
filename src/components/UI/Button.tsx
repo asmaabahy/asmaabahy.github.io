@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
 import { ButtonProps } from "../../constants/interfaces";
+import { FC } from "react";
 
-export default function Button({ children, onClick, className, whileHover }: ButtonProps) {
+const Button: FC<ButtonProps> = ({ children, onClick, className, whileHover }) => {
   return (
     <motion.button
       whileHover={whileHover}
@@ -13,3 +14,5 @@ export default function Button({ children, onClick, className, whileHover }: But
     </motion.button>
   );
 }
+
+export default Button

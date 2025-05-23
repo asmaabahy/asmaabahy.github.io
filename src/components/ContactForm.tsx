@@ -1,8 +1,9 @@
+import { FormEvent } from "react";
 import Button from "./UI/Button";
 import Input from "./UI/Input";
 
 function ContactForm() {
-  function handleSubmit(event: any) {
+  function handleSubmit(event: FormEvent) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);

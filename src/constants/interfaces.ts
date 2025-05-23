@@ -3,7 +3,7 @@ import { TargetAndTransition, VariantLabels } from "motion/react";
 export interface ButtonProps {
   children: React.ReactNode;
   className?: string;
-  whileHover?: TargetAndTransition | VariantLabels | {}
+  whileHover?: TargetAndTransition | VariantLabels
   onClick?: (e: any) => void;
 }
 
@@ -14,7 +14,6 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 export interface navbarItem {
   path: string;
   label: string;
-  underConstruction: boolean;
 }
 
 export interface SideMenuProps {
