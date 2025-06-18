@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 import { Skill } from "../../constants/interfaces";
 const item = {
   hidden: { scale: 0.9, opacity: 0 },
@@ -16,9 +16,9 @@ function SkillBox({skill} : {skill: Skill}) {
     <motion.div
       variants={item}
       transition={transition}
-      className="bg-neutral-400/10 h-28 w-28 md:h-32 md:w-32 flex flex-col justify-center items-center gap-2 rounded-lg  font-medium"
+      className="bg-neutral-400/10 text-sm h-20 w-20 md:h-24 md:w-24 flex flex-col justify-center items-center gap-2 rounded-lg  font-medium"
     >
-      <img src={skill.path} alt={skill.label} className="h-14 w-14" />
+      <img src={skill.path} alt={skill.label} className="h-10 w-10" />
       <p>{skill.label}</p>
     </motion.div>
   );

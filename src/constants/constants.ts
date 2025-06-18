@@ -54,5 +54,5 @@ export const DEVSTACK : Skill[] = [
   { id: "next", label: "NextJS", path: "/dev_stack_images/next.svg" },
   { id: "vue", label: "VueJS", path: "/dev_stack_images/vue.svg" },
   { id: "nuxt", label: "NuxtJS", path: "/dev_stack_images/nuxt.svg" },
-  { id: "motion", label: "Framer Motion", path: "/dev_stack_images/framer-motion.svg" },
+  { id: "motion", label: "Motion", path: "/dev_stack_images/framer-motion.svg" },
 ];

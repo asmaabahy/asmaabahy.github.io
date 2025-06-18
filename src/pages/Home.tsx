@@ -1,23 +1,21 @@
-import SectionFrame from "../components/UI/SectionFrame";
-import Title from "../components/Title";
-import About from "../components/About";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
+import { Title, About, Experience, Skills, Projects } from "../components";
+import { SectionFrame } from "../components/UI";
 
 export default function Home() {
   return (
     <>
-      <SectionFrame>
-        <Title />
-      </SectionFrame>
+      <Title />
       <SectionFrame title="About Me">
         <About />
       </SectionFrame>
-      <SectionFrame title="Experience">
+      <SectionFrame title="Work Experience">
         <Experience />
       </SectionFrame>
-      <SectionFrame title="Skills">
+      <SectionFrame title="Frontend Dev Skills">
         <Skills />
+      </SectionFrame>
+      <SectionFrame title="Projects I Worked On">
+        <Projects />
       </SectionFrame>
     </>
   );

@@ -2,6 +2,8 @@ import { FormEvent } from "react";
 import Button from "./UI/Button";
 import Input from "./UI/Input";
 
+
+
 function ContactForm() {
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
@@ -10,8 +12,10 @@ function ContactForm() {
     console.log(data);
   }
 
+
+
   return (
-    <div className="bg-neutral-50/10 rounded-lg">
+    <div className="opacity-0 bg-neutral-50/10 rounded-lg animate-fade-in-delay-1">
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-3 justify-center items-center p-8"
@@ -46,7 +50,7 @@ function ContactForm() {
         <div>
           <Button
             whileHover={{ scale: 1.1 }}
-            className="border px-6 py-2 text-lg rounded-full"
+            className="border px-5 py-1 rounded-full"
           >
             Send
           </Button>

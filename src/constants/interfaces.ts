@@ -46,3 +46,11 @@ export interface Skill {
   label: string;
   path: string;
 }
+
+export interface ProjectDetailsInterface {
+  image: string;
+  name: string;
+  link: string;
+  technologies: string[];
+  description: string;
+}
