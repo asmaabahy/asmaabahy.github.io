@@ -1,5 +1,5 @@
-import { FaLinkedin } from "react-icons/fa6";
-import { Button } from "../UI";
+import { FaLinkedin, FaRegFaceLaughBeam } from "react-icons/fa6";
+import { Link } from "react-router";
 
 export default function About() {
   return (
@@ -23,13 +23,27 @@ export default function About() {
             at the forefront of the ever-evolving web landscape.
           </span>
         </p>
+      <div className="flex flex-row justify-center items-center gap-3 w-full">
+        <a
+          href={"https://linkedin.com/in/asmaabahy"}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={"LinkedIn Profile"}
+          className="text-lg w-fit border bg-primary/20 rounded-xl px-3 py-2 flex flex-row flex-nowrap justify-center items-center gap-2 "
+        >
+          <FaLinkedin />
+          Let's Connect
+        </a>
+        <Link
+          to={"contact"}
+          aria-label={"Contact page"}
+          className="text-lg w-fit border-2 border-border rounded-xl px-3 py-2 flex flex-row flex-nowrap justify-center items-center gap-2 animate-bounce duration-100"
+        >
+          <FaRegFaceLaughBeam />
+          Say Hi
+        </Link>
       </div>
-      <Button
-        className="text-lg bg-primary/20 rounded-xl px-3 py-2 mx-auto flex flex-row flex-nowrap justify-center items-center gap-2 animate-float"
-      >
-        <FaLinkedin />
-        Let's Connect
-      </Button>
+      </div>
     </section>
   );
 }

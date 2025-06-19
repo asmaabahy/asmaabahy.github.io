@@ -1,14 +1,11 @@
 import { NavLink, useLocation, useNavigate } from "react-router";
 import { motion } from "motion/react";
 import { navbarItem } from "../../../constants/interfaces";
-import SideMenu from "./SideMenu";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "..";
+import { FaRegEnvelope } from "react-icons/fa6";
 
-const navbarItems: navbarItem[] = [
-  { path: "/", label: "Home" },
-  { path: "/contact", label: "Contact" },
-];
+const navbarItems: navbarItem[] = [{ path: "/contact", label: "Contact" }];
 
 const container = {
   hidden: { opacity: 0 },
@@ -27,7 +24,7 @@ const listItem = {
 
 export default function Navbar() {
   const location = useLocation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -49,7 +46,10 @@ export default function Navbar() {
         }
       >
         <div className="container flex items-center justify-between ">
-          <span onClick={() => navigate('/') } className="relative z-10 text-2xl font-bold text-primary flex items-center">
+          <span
+            onClick={() => navigate("/")}
+            className="relative cursor-pointer z-10 text-2xl font-bold text-primary flex items-center"
+          >
             <span className="text-glow text-foreground">AsmaaBahy</span>
             <span className="text-primary">.dev</span>
           </span>
@@ -67,7 +67,7 @@ export default function Navbar() {
                   key={item.label}
                   className={`flex-nowrap shrink-0 flex flex-col gap-1 justify-between items-center text-xl 3xl:text-5xl ${
                     item.path === location.pathname
-                      ? "underline text-primary"
+                      ? "underline underline-offset-8 text-primary"
                       : "hover:text-glow hover:text-primary"
                   } `}
                 >
@@ -86,8 +86,18 @@ export default function Navbar() {
             </motion.ul>
 
             <ThemeToggle />
-            {/* mobile & tab screen navbar */}
-            <SideMenu />
+
+            <NavLink
+              to={"contact"}
+              aria-label={"Contact page"}
+              className={({ isActive }) => {
+                return isActive
+                  ? "text-primary block md:hidden text-xl"
+                  : "text-foreground block md:hidden text-xl";
+              }}
+            >
+              <FaRegEnvelope className="h-6 w-6" />
+            </NavLink>
           </div>
         </div>
       </nav>

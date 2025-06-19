@@ -5,25 +5,25 @@ import { ContactForm } from "../components";
 export default function Contact() {
   const icons = [
     {
-      href: "https://github.com/yourusername",
+      href: "https://github.com/asmaabahy",
       icon: <FaGithub />,
       label: "GitHub",
     },
     {
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://linkedin.com/in/asmaabahy",
       icon: <FaLinkedin />,
       label: "LinkedIn",
     },
     {
-      href: "mailto:you@example.com",
+      href: "mailto:asmaaxbahy@gmail.com",
       icon: <FaEnvelope />,
       label: "Email",
     },
   ];
   return (
-    <section className="min-h-[calc(100vh-5rem)] flex flex-col justify-center items-center">
+    <section className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-center items-center">
       <h1 className="opacity-0 text-2xl xs:text-4xl xl:text-4xl mb-5 font-semibold tracking-tighter animate-fade-in">
-        Say Hello
+        Feel free to drop me a message.
       </h1>
 
       <ContactForm />

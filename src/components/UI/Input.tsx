@@ -1,4 +1,11 @@
-function Input({ type, ...props }) {
+import React from "react";
+
+type InputProps = React.InputHTMLAttributes<HTMLInputElement> &
+  React.TextareaHTMLAttributes<HTMLTextAreaElement> & {
+    type?: string;
+  };
+
+function Input({ type, ...props }: InputProps) {
   if (type === "textarea") {
     return (
       <textarea

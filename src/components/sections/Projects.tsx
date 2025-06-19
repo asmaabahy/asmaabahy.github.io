@@ -1,4 +1,3 @@
-import { AnimatePresence } from "motion/react";
 import { ProjectDetailsInterface } from "../../constants/interfaces";
 import ProjectCard from "../UI/ProjectCard";
 
@@ -41,9 +40,7 @@ function Projects() {
         })}
       </div>
 
-      <AnimatePresence>
-        {/* isCreatingNewChallenge && <NewChallenge onDone={handleDone} /> */}
-      </AnimatePresence>
+      
     </section>
   );
 }

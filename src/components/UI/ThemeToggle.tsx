@@ -28,7 +28,7 @@ function ThemeToggle() {
   }
   return (
     <button
-      className="cursor-pointer   top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-hidden"
+      className="cursor-pointer bg-primary/30 top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-hidden"
       onClick={handleThemeToggle}
     >
       {isDarkMode ? (
