@@ -28,13 +28,13 @@ function ThemeToggle() {
   }
   return (
     <button
-      className="cursor-pointer fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-hidden"
+      className="cursor-pointer   top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-hidden"
       onClick={handleThemeToggle}
     >
       {isDarkMode ? (
-        <FaRegSun className="h-6 w-6 text-blue-50" />
+        <FaRegSun className="h-6 w-6 text-foreground" />
       ) : (
-        <FaRegMoon className="h-6 w-6 text-blue-900" />
+        <FaRegMoon className="h-6 w-6 text-foreground" />
       )}
     </button>
   );

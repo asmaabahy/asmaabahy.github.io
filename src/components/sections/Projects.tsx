@@ -35,7 +35,7 @@ function Projects() {
       <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">
         Featured <span className="text-primary">Projects</span>
       </h1>
-      <div className="grid md:grid-cols-3 p-3 mx-auto max-w-6xl">
+      <div className="grid md:grid-cols-3 justify-center gap-4 p-3 mx-auto max-w-6xl">
         {projectsList.map((project) => {
           return <ProjectCard key={project.name} projectDetails={project} />;
         })}

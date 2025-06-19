@@ -17,7 +17,7 @@ function ContactForm() {
 
 
   return (
-    <div className="opacity-0 bg-neutral-50/10 rounded-lg animate-fade-in-delay-1">
+    <div className="opacity-0 bg-primary/10 rounded-lg animate-fade-in-delay-1">
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-3 justify-center items-center p-8"

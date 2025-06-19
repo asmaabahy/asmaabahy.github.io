@@ -10,6 +10,7 @@ import Navbar from "./Navbar/Navbar";
 import SideMenu from "./Navbar/SideMenu";
 import ThemeToggle from "./ThemeToggle";
 import StarBackground from "./StarBackground";
+import Footer from "./Footer";
 
 export {
   Button,
@@ -23,5 +24,6 @@ export {
   Navbar,
   SideMenu,
   ThemeToggle,
-  StarBackground
+  StarBackground,
+  Footer
 };

@@ -33,7 +33,7 @@ function Skills() {
   );
 
   return (
-    <section id="skills" className="h-screen py-24 px-4 relative select-none">
+    <section id="skills" className="min-h-fit py-24 px-4 relative select-none">
       <div className="container mx-auto max-w-5xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           My <span className="text-primary">Skills</span>

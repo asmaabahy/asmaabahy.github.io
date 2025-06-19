@@ -2,7 +2,7 @@ import { FaBars } from "react-icons/fa6";
 import { NavLink } from "react-router";
 import { navbarItem } from "../../../constants/interfaces";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const navbarItems: navbarItem[] = [
   { path: "/", label: "Home" },
@@ -10,21 +10,37 @@ const navbarItems: navbarItem[] = [
 ];
 
 export default function SideMenu() {
+  const sideMenu = useRef<HTMLElement>(null);
   const [showMenu, setShowMenu] = useState(false);
+
+  const hideSideMenu = useCallback(
+    (e: MouseEvent) => {
+      if (showMenu && !sideMenu.current?.contains(e.target as Node)) {
+        setShowMenu(false);
+      }
+    },
+    [showMenu]
+  );
+
+  useEffect(() => {
+    document.addEventListener("mousedown", hideSideMenu);
+    return () => document.removeEventListener("mousedown", hideSideMenu);
+  }, [hideSideMenu]);
 
   return (
     <>
       <div onClick={() => setShowMenu(true)} className="block md:hidden">
-        <FaBars className="text-3xl hover:scale-110 text-amber-50" />
+        <FaBars className="text-3xl hover:scale-110 text-foreground" />
       </div>
 
       <AnimatePresence>
         {showMenu && (
           <motion.nav
+            ref={sideMenu}
             initial={{ x: "100%" }}
             animate={{ x: 0, transition: { type: "tween" } }}
             exit={{ x: "100%", transition: { type: "tween" } }}
-            className="bg-neutral-800/70 backdrop-blur-md fixed z-50 right-0 top-1 bottom-1 w-[80%] sm:w-[70%] rounded-tl-2xl rounded-bl-2xl flex flex-col p-4 md:hidden"
+            className="bg-foreground/20 text-lg font-semibold backdrop-blur-md fixed z-50 right-0 top-1 bottom-1 w-[80%] sm:w-[70%] rounded-tl-2xl rounded-bl-2xl flex flex-col p-4 md:hidden"
           >
             {/* menu */}
             <div className="mb-auto h-full flex flex-col justify-center">
@@ -45,10 +61,6 @@ export default function SideMenu() {
                   </motion.li>
                 ))}
               </ul>
-            </div>
-
-            <div className="py-2">
-              <p className="text-sm text-center">Asmaa Bahy © 2025</p>
             </div>
           </motion.nav>
         )}
