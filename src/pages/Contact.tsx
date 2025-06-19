@@ -22,15 +22,13 @@ export default function Contact() {
   ];
   return (
     <section className="min-h-screen flex flex-col justify-center items-center">
-      <h1
-        className="opacity-0 text-2xl xs:text-4xl xl:text-4xl mb-5 font-extrabold tracking-tighter animate-fade-in"
-      >
-        Leave a message right here.
+      <h1 className="opacity-0 text-2xl xs:text-4xl xl:text-4xl mb-5 font-semibold tracking-tighter animate-fade-in">
+        Say Hello
       </h1>
 
       <ContactForm />
       <p className="opacity-0 font-semibold text-lg my-4 animate-fade-in-delay-2">
-        Or connect with me here instead:
+        Or connect with me in here instead:
       </p>
 
       <div className="opacity-0 flex items-center gap-4 text-neutral-700 dark:text-neutral-200 mb-5 animate-fade-in-delay-3">

@@ -92,7 +92,7 @@
 
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
+    --primary: 325, 100%, 61%;
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
@@ -104,8 +104,9 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
+    --primary: 319, 100%, 73%;
     --primary-foreground: 213 31% 91%;
+
 
     --border: 217 33% 20%;
   }
@@ -147,7 +148,7 @@
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 20px rgba(167, 139, 250);
+  text-shadow: 0 0 20px rgba(255, 54, 171);
 }
 
 @utility card-hover {
@@ -163,7 +164,7 @@
 
 @utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,116,212,0.5)]
          hover:scale-105 active:scale-95;
 }
 
@@ -181,28 +182,4 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
 }
-
-/* @theme {
- --breakpoint-xs: 25rem;
-  --breakpoint-3xl: 120rem;
-
-  --animate-spin-slow: spin 15s linear infinite;
-  --animate-typing: typing 3s steps(22) forwards, blink 1s step-end infinite;
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-} */

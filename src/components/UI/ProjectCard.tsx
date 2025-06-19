@@ -9,7 +9,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ projectDetails }) => {
   return (
     <motion.div className="group relative max-w-90">
-      <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
+      <div className="card relative bg-foreground/10 overflow-hidden rounded-xl backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
 
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
 
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectDetails }) => {
             <p>{projectDetails.description}</p>
           </div>
 
-          <div className="absolute inset-0 border border-white/0 group-hover:border-purple-500/50 rounded-xl transition-colors duration-300 -z-50"></div>
+          <div className="absolute inset-0 border border-white/0 group-hover:border-primary/80 rounded-xl transition-colors duration-300 -z-50"></div>
 
         </div>
       </div>

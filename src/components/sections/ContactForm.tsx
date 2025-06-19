@@ -1,15 +1,17 @@
 import { FormEvent } from "react";
-import Button from "./UI/Button";
-import Input from "./UI/Input";
+import Button from "../UI/Button";
+import Input from "../UI/Input";
 
 
 
 function ContactForm() {
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
-    console.log(data);
+    // const formData = new FormData(event.target);
+    // const data = Object.fromEntries(formData);
+    // console.log(data);
+
+    setTimeout(()=> {}, 1500)
   }
 
 

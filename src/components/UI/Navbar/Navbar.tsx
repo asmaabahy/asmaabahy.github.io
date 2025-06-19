@@ -42,7 +42,7 @@ export default function Navbar() {
     <>
       <nav
         className={
-          "fixed z-30 w-full transition-all duration-300 " +
+          "fixed z-30 w-full transition-all duration-300 select-none " +
           (isScrolled
             ? "py-3 bg-background/80 backdrop-blur-md shadow-xs"
             : "py-5")
@@ -50,8 +50,8 @@ export default function Navbar() {
       >
         <div className="container flex items-center justify-between ">
           <span className="relative z-10 text-2xl font-bold text-primary flex items-center">
-            <span className="text-glow text-foreground">Asmaa</span>
-            <span className="text-primary">Bahy</span>
+            <span className="text-glow text-foreground">AsmaaBahy</span>
+            <span className="text-primary">.dev</span>
           </span>
 
           <motion.ul
@@ -64,7 +64,11 @@ export default function Navbar() {
               <motion.li
                 variants={listItem}
                 key={item.label}
-                className={`hover:text-primary hover:text-glow flex-nowrap shrink-0 flex flex-col gap-1 justify-between items-center text-xl 3xl:text-5xl ${ item.path === location.pathname && "underline"} `}
+                className={`flex-nowrap shrink-0 flex flex-col gap-1 justify-between items-center text-xl 3xl:text-5xl ${
+                  item.path === location.pathname
+                    ? "underline text-primary"
+                    : "hover:text-glow hover:text-primary"
+                } `}
               >
                 <span>
                   <NavLink to={item.path}>{item.label}</NavLink>

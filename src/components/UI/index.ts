@@ -4,7 +4,6 @@ import ExperienceDetailsCard from "./ExperienceDetailsCard";
 import Input from "./Input";
 import Modal from "./Modal";
 import ProjectCard from "./ProjectCard";
-import SectionFrame from "./SectionFrame";
 import SkillBox from "./SkillBox";
 import TechnologieTag from "./TechnologieTag";
 import Navbar from "./Navbar/Navbar";
@@ -19,7 +18,6 @@ export {
   Input,
   Modal,
   ProjectCard,
-  SectionFrame,
   SkillBox,
   TechnologieTag,
   Navbar,
