@@ -14,7 +14,6 @@ function ContactForm() {
     event.preventDefault();
 
     const formData = new FormData(event.target as HTMLFormElement);
-    console.log(Object.fromEntries(formData));
 
     const response = await fetch(
       "https://script.google.com/macros/s/AKfycbz3Cjsmos-rfAqkmhzD0b9e9t-v2FdqXsqEUUDjQUJw9vGFWoOJk71qpuTjDMsHnX-dLA/exec",
