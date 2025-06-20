@@ -63,7 +63,7 @@ export const DEVSTACK: Skill[] = [
 
 export const PROJECTS = [
   {
-    image: "src/assets/images/accounting-app/1.png",
+    image: "/images/accounting-app/1.png",
     name: "Fiduflex",
     technologies: ["NuxtJs", "TypeScript", "Sass", "Pinia", "Axios"],
     description:
@@ -86,7 +86,7 @@ export const PROJECTS = [
     ],
   },
   {
-    image: "src/assets/images/e-learning-app/1.png",
+    image: "/images/e-learning-app/1.png",
     name: "Sensiocrafts",
     technologies: [
       "Nuxt",
