@@ -13,7 +13,7 @@ function ProjectCarousel({
 
 
   function prevSlide() {
-    setCurrentSlide((prev) => (prev === 1 ? folderLink.length - 1 : prev - 1));
+    setCurrentSlide((prev) => (prev === 0 ? folderLink.length - 1 : prev - 1));
   }
 
   function nextSlide() {
@@ -22,7 +22,7 @@ function ProjectCarousel({
 
   return (
     <div className="flex flex-col items-end justify-center gap-3">
-      <div className="relative w-full rounded-xl overflow-hidden shadow-sm flex flex-row justify-center items-center">
+      <div className="relative w-full h-auto md:h-90 md:w-auto rounded-xl overflow-hidden shadow-sm flex flex-row justify-center items-center">
         <AnimatePresence mode="sync">
           {folderLink.map(
             (image) =>

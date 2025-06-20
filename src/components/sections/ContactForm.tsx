@@ -12,8 +12,8 @@ function ContactForm() {
   async function handleSubmit(event: FormEvent) {
     setStatus("loading");
     event.preventDefault();
-
-    const formData = new FormData(event.target as HTMLFormElement);
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
 
     const response = await fetch(
       "https://script.google.com/macros/s/AKfycbz3Cjsmos-rfAqkmhzD0b9e9t-v2FdqXsqEUUDjQUJw9vGFWoOJk71qpuTjDMsHnX-dLA/exec",
@@ -28,6 +28,7 @@ function ContactForm() {
     }
 
     setStatus("success");
+    form.reset();
   }
 
   return (
