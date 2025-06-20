@@ -6,7 +6,7 @@ export const EXPERIENCE: Experience[] = [
     position: "Junior Frontend Developer",
     company: "INFLEXIT",
     companyWebsite: "https://www.inflexit.com/",
-    date: "09/23 - 09/24",
+    date: "09/23 - 12/24",
     description: [
       "Worked with a team of 3 frontend developers on two projects: an accounting platform and an e-learning platform.",
       "Built key frontend features, such as dynamic forms and data tables, ensuring smooth functionality and user interaction.",
@@ -30,7 +30,7 @@ export const EXPERIENCE: Experience[] = [
   },
 ];
 
-export const DEVSTACK : Skill[] = [
+export const DEVSTACK: Skill[] = [
   { id: "html", label: "HTML", path: "/dev_stack_images/html5.svg" },
   { id: "css", label: "CSS", path: "/dev_stack_images/css3.svg" },
   {
@@ -54,5 +54,61 @@ export const DEVSTACK : Skill[] = [
   { id: "next", label: "NextJS", path: "/dev_stack_images/next.svg" },
   { id: "vue", label: "VueJS", path: "/dev_stack_images/vue.svg" },
   { id: "nuxt", label: "NuxtJS", path: "/dev_stack_images/nuxt.svg" },
-  { id: "motion", label: "Motion", path: "/dev_stack_images/framer-motion.svg" },
+  {
+    id: "motion",
+    label: "Motion",
+    path: "/dev_stack_images/framer-motion.svg",
+  },
+];
+
+export const PROJECTS = [
+  {
+    image: "src/assets/images/accounting-app/1.png",
+    name: "Fiduflex",
+    technologies: ["NuxtJs", "TypeScript", "Sass", "Pinia", "Axios"],
+    description:
+      "A SaaS solution with a subscription system designed to simplify business operations, including billing, accounting, and HR management, while adapting to growing company needs.",
+    role: "As a front-end developer, I was responsible for developing responsive interfaces, integrating API endpoints, and ensuring a smooth user experience",
+    keyFeatures: [
+      "Invoicing and product management.",
+      "Accounting tools for internal and external use.",
+      "Subscription system with user and product scaling.",
+    ],
+    carousselPictures: [
+      { id: 0, path: "src/assets/images/accounting-app/1.png" },
+      { id: 1, path: "src/assets/images/accounting-app/2.png" },
+      { id: 2, path: "src/assets/images/accounting-app/3.png" },
+      { id: 3, path: "src/assets/images/accounting-app/4.png" },
+      { id: 4, path: "src/assets/images/accounting-app/5.png" },
+      { id: 5, path: "src/assets/images/accounting-app/6.png" },
+      { id: 6, path: "src/assets/images/accounting-app/7.png" },
+      { id: 7, path: "src/assets/images/accounting-app/8.png" },
+    ],
+  },
+  {
+    image: "src/assets/images/e-learning-app/1.png",
+    name: "Sensiocrafts",
+    technologies: [
+      "Nuxt",
+      "React",
+      "flowbite",
+      "Tailwind CSS",
+      "Pinia",
+      "axios",
+    ],
+    description:
+      "An e-learning platform designed to help developers prepare for certifications in modern tech tools like Symfony, Sylius, Docker, and AWS.",
+    role: "As a front-end developer, I contributed to building the user interface, integrating APIs, and ensuring a smooth experience across learning paths, quizzes, and dashboards.",
+    keyFeatures: [
+      "Personalized certification programs with curated resources.",
+      "Daily quizzes to test and reinforce knowledge.",
+      "Progress tracking with feedback and improvement suggestions.",
+    ],
+    carousselPictures: [
+      { id: 0, path: "src/assets/images/e-learning-app/1.png" },
+      { id: 1, path: "src/assets/images/e-learning-app/2.png" },
+      { id: 2, path: "src/assets/images/e-learning-app/3.png" },
+      { id: 3, path: "src/assets/images/e-learning-app/4.png" },
+    ],
+  },
 ];

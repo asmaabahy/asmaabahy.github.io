@@ -50,6 +50,7 @@ export default function Navbar() {
             onClick={() => navigate("/")}
             className="relative cursor-pointer z-10 text-2xl font-bold text-primary flex items-center"
           >
+            <span className="w-8 h-auto mr-1"><img src="/favicon.svg" className="object-cover"/></span>
             <span className="text-glow text-foreground">AsmaaBahy</span>
             <span className="text-primary">.dev</span>
           </span>

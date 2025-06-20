@@ -78,18 +78,16 @@ function ContactForm() {
       <AnimatePresence>
         {status === "success" && (
           <Modal>
-            <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/30 backdrop-blur-sm">
-              <div className="bg-background text-foreground border border-border rounded-2xl shadow-xl p-6 w-full max-w-sm text-center animate-fade-in">
-                <div className="text-primary text-4xl mb-2">✓</div>
-                <h2 className="text-lg font-semibold mb-1">Thank you!</h2>
-                <p className="text-sm ">Got it! I’ll get back to you soon.</p>
-                <button
-                  onClick={() => setStatus("idle")}
-                  className="mt-4 cursor-pointer px-4 py-2 text-sm bg-primary text-white rounded hover:scale-110 transition"
-                >
-                  Close
-                </button>
-              </div>
+            <div className=" text-center">
+              <div className="text-primary text-4xl mb-2">✓</div>
+              <h2 className="text-lg font-semibold mb-1">Thank you!</h2>
+              <p className="text-sm ">Got it! I’ll get back to you soon.</p>
+              <button
+                onClick={() => setStatus("idle")}
+                className="mt-4 cursor-pointer px-4 py-2 text-sm bg-primary text-white rounded hover:scale-110 transition"
+              >
+                Close
+              </button>
             </div>
           </Modal>
         )}

@@ -1,8 +1,6 @@
 import { FC } from "react";
 import { Button } from "../UI";
 
-//import { motion } from "motion/react";
-
 const Title: FC = () => {
   function handleClick() {}
   return (
@@ -26,14 +24,14 @@ const Title: FC = () => {
             Specializing in front-end development, I build interfaces that are
             both beautiful and functional.
           </p>
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <Button
-              whileHover={{ scale: 1.1 }}
-              className="tracking-widest text-nowrap font-semibold bg-primary/10 px-6 py-1 text-lg rounded-full border"
-              onClick={handleClick}
+          <div className="opacity-0 mx-auto w-fit animate-fade-in-delay-4 bg-primary/10 px-6 py-1 text-lg rounded-full border ">
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              className="tracking-widest text-nowrap font-semibold "
             >
               Download CV
-            </Button>
+            </a>
           </div>
         </div>
       </div>

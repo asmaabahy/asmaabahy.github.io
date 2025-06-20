@@ -3,11 +3,12 @@ import { TargetAndTransition, VariantLabels } from "motion/react";
 export interface ButtonProps {
   children: React.ReactNode;
   className?: string;
-  whileHover?: TargetAndTransition | VariantLabels
-  onClick?: (e: any) => void;
+  whileHover?: TargetAndTransition | VariantLabels;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   type: string; // e.g., 'text', 'email', 'password', etc.
 }
 
@@ -50,7 +51,9 @@ export interface Skill {
 export interface ProjectDetailsInterface {
   image: string;
   name: string;
-  link: string;
   technologies: string[];
   description: string;
+  role: string;
+  keyFeatures: string[];
+  carousselPictures: {id: number , path: string}[];
 }

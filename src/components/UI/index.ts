@@ -11,6 +11,7 @@ import SideMenu from "./Navbar/SideMenu";
 import ThemeToggle from "./ThemeToggle";
 import StarBackground from "./StarBackground";
 import Footer from "./Footer";
+import ProjectsDetails from "./ProjectsDetails";
 
 export {
   Button,
@@ -25,5 +26,6 @@ export {
   SideMenu,
   ThemeToggle,
   StarBackground,
-  Footer
+  Footer,
+  ProjectsDetails
 };
