@@ -1,8 +1,6 @@
 import { FC } from "react";
-import { Button } from "../UI";
 
 const Title: FC = () => {
-  function handleClick() {}
   return (
     <section
       id="hero"
